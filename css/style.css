@@ -1,0 +1,48 @@
+@font-face {
+    font-family: 'Bionicle';
+    src: url("../fonts/metrumatoran.ttf");
+  }
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Bionicle';
+    font-size:1.5em;
+    color:white;
+
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url("../images/background.png");
+    background-size: cover;
+}
+.container{
+    display: inline-block;
+    width:100%;
+    text-align: center;
+}
+input{
+    width:500px;
+    height:100px;
+    font-size:0.5em;
+    color:white;
+    font-family: sans-serif;
+    outline:none;
+    appearance: none;
+    background:none;
+    border:none;
+    border-bottom:3px solid white;
+}
+input::placeholder{
+    color:white;
+    opacity: 1;
+    
+}
+p{
+    word-break: break-all;
+}
+

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Matoran Language Translator</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="inputbox">
+                <input id="input_text" type="text" onkeyup="translate(event)" maxlength="25" placeholder="Type here">
+            </div>
+            <br>
+            <p id="biotext"></p>
+        </div>
+        <script>
+            let input_text = document.getElementById('input_text');
+            let biotext = document.getElementById('biotext');
+           
+            function translate(event) {
+                biotext.innerHTML = input_text.value;  
+            }
+        </script>
+    </body>
+</html>

@@ -9,7 +9,7 @@
         <div class="container">
             <p id="error"></p>
             <div class="inputbox">
-                <input id="input_text" type="text" onkeyup="translate(event)" touchstart="translate(event)" maxlength="25" placeholder="Type here">
+                <input id="input_text" type="text" maxlength="25" placeholder="Type here">
             </div>
             <br>
             <p id="biotext"></p>
@@ -19,14 +19,14 @@
             let biotext = document.getElementById('biotext');
             let error = document.getElementById('error');
            
-            function translate(event) {
+            document.addEventListener('input', function(event){
                 biotext.innerHTML = input_text.value;
                 if(input_text.value.length == input_text.maxLength){
                     error.innerHTML = 'Character limit reached';
                 }else{
                     error.innerHTML = '';
                 }
-            }
+            });
         </script>
     </body>
 </html>
